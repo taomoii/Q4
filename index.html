@@ -2,16 +2,76 @@
 <html lang="zh-Hant-TW">
 
 <head>
+  <!-- 載入公司共用追蹤碼 -->
+  <script>
+    let cacheID = new Date().getMilliseconds();
+    let Login_InternalScript = document.createElement('script');
+    Login_InternalScript.src = 'https://event.kgi.com.tw/news/event/commonResources/js/trackingCode.js?uid=' + cacheID;
+    document.head.appendChild(Login_InternalScript);
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>享投資選凱基，投資好禮三重送－凱基證券</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#081c43">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>享投資選凱基，證券開戶投資優惠三重送－凱基證券</title>
   <meta name="description"
-    content="凱基證券線上開戶超方便，台美股今天開戶，明天立即開始投資。年末限時加碼，投資好禮三重送，開戶即享500元蝦皮全站優惠券，交易再送月月700元手續費抵用金，滿額再抽 iPhone 18 Pro。">
+    content="凱基證券開戶優惠年末限時加碼！開戶即享500元蝦皮全站優惠券，交易再送月月700元手續費抵用金，滿額再抽 iPhone 18 Pro及蝦皮萬元購物金。線上開戶超方便，台美股今天開戶，明天立即開始投資。">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="享投資選凱基，投資好禮三重送－凱基證券">
-  <meta property="og:description" content="新戶送500元蝦皮全站優惠券，交易月月加碼700元手續費抵用金，滿額再抽 iPhone 18 Pro。">
-  <meta property="og:image" content="images/q4-kv.png">
-  <link rel="icon" href="images/favicon.ico">
+  <meta property="og:title" content="享投資選凱基，證券開戶投資優惠三重送－凱基證券">
+  <meta property="og:description"
+    content="凱基證券開戶優惠年末限時加碼！開戶即享500元蝦皮全站優惠券，交易再送月月700元手續費抵用金，滿額再抽 iPhone 18 Pro及蝦皮萬元購物金。線上開戶超方便，台美股今天開戶，明天立即開始投資。">
+  <meta property="og:url" content="https://event.kgi.com.tw/news/event/rewards/index.html">
+  <meta property="og:image" content="https://event.kgi.com.tw/news/event/rewards/images/fb.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link rel="canonical" href="https://event.kgi.com.tw/news/event/rewards/index.html">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="https://www.kgi.com.tw/media/assets/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="https://www.kgi.com.tw/media/assets/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+  <link href="https://www.kgi.com.tw/media/assets/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "凱基證券",
+      "url": "https://www.kgi.com.tw/",
+      "logo": "https://www.kgi.com.tw/zh-tw/-/media/images/kgis/header/logo-kgis.svg",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://event.kgi.com.tw/news/event/rewards/index.html"
+      },
+      "image": ["https://event.kgi.com.tw/news/event/rewards/images/fb.png"]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": "https://www.kgi.com.tw/",
+          "name": "首頁"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": "https://event.kgi.com.tw/news/event/rewards/index.html",
+          "name": "享投資選凱基，證券開戶投資優惠三重送－凱基證券"
+        }
+      ]
+    }
+  </script>
+
+  <meta name="apple-itunes-app" content="app-id=1473914290">
+  <meta name="google-play-app" content="app-id=tw.com.kgi.ecapp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -25,6 +85,7 @@
   <script src="https://event.kgi.com.tw/news/event/commonResources/js/vue-v3.js"></script>
   <script src="https://event.kgi.com.tw/news/event/commonResources/js/jquery-v3.4.min.js"></script>
   <script src="https://event.kgi.com.tw/news/event/commonResources/js/slick.min.js"></script>
+  <script src="js/kgis-meta-1.js"></script>
 </head>
 
 <body>
@@ -240,20 +301,20 @@
             <h2>手續費省更多，投資更輕鬆</h2>
             <div class="fee-grid">
               <article>
-                <img class="fee-illustration" src="images/fees_01.svg?v=20260909b" alt="台股新戶手續費優惠">
+                <img class="fee-illustration" src="images/fees_01.svg" alt="台股新戶手續費優惠">
                 <h3>台股新戶</h3>
                 <p><strong>手續費優惠</strong></p>
                 <a href="#notice">點此了解 &gt;</a>
               </article>
               <article>
-                <img class="fee-illustration" src="images/fees_02.svg?v=20260909b" alt="美股手續費優惠">
+                <img class="fee-illustration" src="images/fees_02.svg" alt="美股手續費優惠">
                 <h3>美股手續費超有感</h3>
                 <p>免申請立即擁有</p>
                 <p><strong>手續費驚喜價?</strong></p>
                 <a href="#notice">點此了解 &gt;</a>
               </article>
               <article>
-                <img class="fee-illustration" src="images/fees_03.svg?v=20260909b" alt="台美股定期定額優惠">
+                <img class="fee-illustration" src="images/fees_03.svg" alt="台美股定期定額優惠">
                 <h3>台美股定期定額</h3>
                 <p><strong>均一價</strong></p>
                 <a href="#notice">點此了解 &gt;</a>
@@ -599,12 +660,12 @@
         <li>
           <a href="https://eoa.kgi.com.tw/OOA/index.aspx?src=S_113&amp;prod=P_163&amp;_gl=1*1lfe8u3*_gcl_aw*R0NMLjE3ODkwODg2NDAuQ2p3S0NBandxb25WQmhBNEVpd0E5d1lKM2NlT2dxeTJmVWVySmc0R3pwRnRJczZYOUE0ZnBKSlFZLS1YQTRhakUxbmE5Y3ZxYTFZX3ZSb0NuLXNRQXZEX0J3RQ..*_gcl_au*NDU1NzYxMTk3LjE3ODIxODM3NzY.*_ga*MTg5NTkwMjgwMS4xNzgyMTgzNzc2*_ga_K1BGJY4WFR*czE3ODkzNTQzNjkkbzE3NCRnMSR0MTc4OTM1NDczNyRqNjAkbDAkaDA.&amp;Source=E260801"
             title="開戶" target="_blank" id="AccountBtn_F">
-            <img src="images/open-account.svg?=v20260806" alt="開戶" id="FixedBtn_F01">
+            <img src="images/open-account.svg" alt="開戶" id="FixedBtn_F01">
           </a>
         </li>
         <li>
           <a href="#register" title="立即登錄" id="SigninBtn_F">
-            <img src="images/login.svg?=v20260806" alt="立即登錄" id="FixedBtn_F02">
+            <img src="images/login.svg" alt="立即登錄" id="FixedBtn_F02">
           </a>
         </li>
       </ul>
@@ -635,7 +696,7 @@
       </div>
     </div>
   </div>
-  <script src="js/main.js?v=20260914b"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
