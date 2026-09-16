@@ -5359,7 +5359,8 @@ h2 {
 
 @media(max-width:767px) {
 .hero {
-  top:57px
+  position:relative;
+  top:auto
 }
 }
 
