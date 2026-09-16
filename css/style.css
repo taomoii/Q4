@@ -6227,6 +6227,12 @@ body {
     margin:0 0 8px;
   }
 
+  .prep-grid article:nth-child(3) h4 {
+    grid-row:1 / span 2;
+    align-self:center;
+    margin:0;
+  }
+
   .prep-grid article h4:after {
     width:100px;
     margin:0;
