@@ -81,7 +81,7 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://event.kgi.com.tw/news/event/commonResources/css/slick.css">
-  <link rel="stylesheet" href="css/style.css?v=20260917">
+  <link rel="stylesheet" href="css/style.css?v=20260918">
   <script src="https://event.kgi.com.tw/news/event/commonResources/js/vue-v3.js"></script>
   <script src="https://event.kgi.com.tw/news/event/commonResources/js/jquery-v3.4.min.js"></script>
   <script src="https://event.kgi.com.tw/news/event/commonResources/js/slick.min.js"></script>
@@ -216,13 +216,17 @@
                 <p>500元蝦皮全站優惠券及<span class="register-mobile-line">最高1,000元手續費抵用金一次打包</span></p>
               </div>
               <div class="register-fields">
-                <label for="pid">請輸入兌換序號</label>
-                <input id="pid" v-model.trim="pid" inputmode="text" maxlength="10" placeholder="請輸入兌換序號"
-                  autocomplete="off">
+                <label for="pid">請輸入身分證字號</label>
+                <input id="pid" v-model.trim="pid" inputmode="text" maxlength="10" placeholder="請輸入身分證字號"
+                  autocomplete="off" required>
+                <label for="redeemCode">請輸入兌換序號</label>
+                <input id="redeemCode" v-model.trim="redeemCode" inputmode="text" placeholder="請輸入兌換序號"
+                  autocomplete="off" required>
                 <label class="agree"><input type="checkbox" v-model="agreed"><span>我同意運用 <a
                       href="https://www.kgi.com.tw/zh-tw/others/statement-of-use-of-personal-information?src=S_113&prod=P_163&_gl=1*19ad82q*_gcl_aw*R0NMLjE3ODkwODg2NDAuQ2p3S0NBandxb25WQmhBNEVpd0E5d1lKM2NlT2dxeTJmVWVySmc0R3pwRnRJczZYOUE0ZnBKSlFZLS1YQTRhakUxbmE5Y3ZxYTFZX3ZSb0NuLXNRQXZEX0J3RQ..*_gcl_au*NDU1NzYxMTk3LjE3ODIxODM3NzY.*_ga*MTg5NTkwMjgwMS4xNzgyMTgzNzc2*_ga_K1BGJY4WFR*czE3ODkxMTkwNzQkbzE3MiRnMSR0MTc4OTExOTA5NCRqNDAkbDAkaDA."
                       target="_blank">個人資料告知書</a></span></label>
-                <button class="primary-button" type="submit" id="SigninBtn_S">立即登錄</button>
+                <button class="primary-button" type="submit" id="SigninBtn_S"
+                  :disabled="!pid || !redeemCode || !agreed">立即登錄</button>
                 <p class="form-message" role="status">{{ formMessage }}</p>
               </div>
             </form>
@@ -708,7 +712,7 @@
       </div>
     </div>
   </div>
-  <script src="js/main.js?v=20260918"></script>
+  <script src="js/main.js?v=20260918v1"></script>
 </body>
 
 </html>

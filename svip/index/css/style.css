@@ -2946,13 +2946,17 @@ html {
   padding:0;
 }
 
-.register-fields>label:first-child {
+.register-fields>label:not(.agree) {
   display:block;
   margin-bottom:10px;
   color:#12304b;
   font-size:18px;
   font-weight:500;
   text-align:left;
+}
+
+.register-fields>input+label:not(.agree) {
+  margin-top:16px;
 }
 
 .register-fields>input {
@@ -2985,6 +2989,11 @@ html {
   background: linear-gradient(135deg, #FFAB6A, #f04a38);
   font-size: 20px;
   font-weight: 600;
+}
+
+.register-fields .primary-button:disabled {
+  opacity:.55;
+  cursor:not-allowed;
 }
 
 .register-fields .form-message {
@@ -5259,8 +5268,12 @@ h2 {
     font-size: 16px;
   }
   
-  .register-fields>label:first-child {
+  .register-fields>label:not(.agree) {
     display: none;
+  }
+
+  .register-fields #redeemCode {
+    margin-top:12px;
   }
 
   .trade-heading {
