@@ -25,7 +25,7 @@
   <meta property="og:description"
     content="凱基證券開戶優惠年末限時加碼！開戶即享500元蝦皮全站優惠券，蝦皮VIP前3個月每月1,000元，後續月月700元，滿額再抽 iPhone 18 Pro及蝦皮萬元購物金。線上開戶超方便，台美股今天開戶，明天立即開始投資。">
   <meta property="og:url" content="https://event.kgi.com.tw/news/event/svip_rewards/index.html">
-  <meta property="og:image" content="https://event.kgi.com.tw/news/event/svip_rewards/images/fb.png">
+  <meta property="og:image" content="https://event.kgi.com.tw/news/event/svip_rewards/images/fb.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <link rel="canonical" href="https://event.kgi.com.tw/news/event/svip_rewards/index.html">
@@ -45,7 +45,7 @@
         "@type": "WebPage",
         "@id": "https://event.kgi.com.tw/news/event/svip_rewards/index.html"
       },
-      "image": ["https://event.kgi.com.tw/news/event/svip_rewards/images/fb.png"]
+      "image": ["https://event.kgi.com.tw/news/event/svip_rewards/images/fb.jpg"]
     }
   </script>
 
@@ -81,7 +81,7 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="https://event.kgi.com.tw/news/event/commonResources/css/slick.css">
-  <link rel="stylesheet" href="css/style.css?v=20260916">
+  <link rel="stylesheet" href="css/style.css?v=20260917">
   <script src="https://event.kgi.com.tw/news/event/commonResources/js/vue-v3.js"></script>
   <script src="https://event.kgi.com.tw/news/event/commonResources/js/jquery-v3.4.min.js"></script>
   <script src="https://event.kgi.com.tw/news/event/commonResources/js/slick.min.js"></script>
@@ -203,7 +203,7 @@
                 <h4>新開戶＋登錄＋交易</h4>
                 <strong><b>最高 $</b>1<span class="amount-comma">,</span>000</strong>
                 <h5>手續費抵用金</h5>
-                <p>不限金額交易月月1,000元股票交易手續費抵用金（限用於台股電子交易，前3個月每月上限1,000元，後續月月上限700元，回饋時間為2026.110-2027.08，詳情請見<a
+                <p>不限金額交易最高1,000元股票交易手續費抵用金（限用於台股電子交易，前3個月每月上限1,000元，後續月月上限700元，回饋時間為2026.110-2027.08，詳情請見<a
                     href="#notice">注意事項</a>）。</p>
                 <small>＊不限金額交易含台美股、定期定額</small>
               </article>
@@ -213,11 +213,11 @@
               <div class="register-copy center">
                 <h3>立即登錄</h3>
                 <h4>即可獲得優惠資格</h4>
-                <p>500元蝦皮全站優惠券及<span class="register-mobile-line">月月1,000元手續費抵用金一次打包</span></p>
+                <p>500元蝦皮全站優惠券及<span class="register-mobile-line">最高1,000元手續費抵用金一次打包</span></p>
               </div>
               <div class="register-fields">
-                <label for="pid">請輸入身分證字號</label>
-                <input id="pid" v-model.trim="pid" inputmode="text" maxlength="10" placeholder="請輸入身分證字號"
+                <label for="pid">請輸入兌換序號</label>
+                <input id="pid" v-model.trim="pid" inputmode="text" maxlength="10" placeholder="請輸入兌換序號"
                   autocomplete="off">
                 <label class="agree"><input type="checkbox" v-model="agreed"><span>我同意運用 <a
                       href="https://www.kgi.com.tw/zh-tw/others/statement-of-use-of-personal-information?src=S_113&prod=P_163&_gl=1*19ad82q*_gcl_aw*R0NMLjE3ODkwODg2NDAuQ2p3S0NBandxb25WQmhBNEVpd0E5d1lKM2NlT2dxeTJmVWVySmc0R3pwRnRJczZYOUE0ZnBKSlFZLS1YQTRhakUxbmE5Y3ZxYTFZX3ZSb0NuLXNRQXZEX0J3RQ..*_gcl_au*NDU1NzYxMTk3LjE3ODIxODM3NzY.*_ga*MTg5NTkwMjgwMS4xNzgyMTgzNzc2*_ga_K1BGJY4WFR*czE3ODkxMTkwNzQkbzE3MiRnMSR0MTc4OTExOTA5NCRqNDAkbDAkaDA."
@@ -232,7 +232,7 @@
         <section class="trade section" id="trade">
           <div class="container center">
             <div class="trade-heading">
-              <h3>第2重－交易禮</h3>
+              <h3>第2重－股票交易禮</h3>
               <div class="trade-entry-flow">
                 <div class="trade-threshold-list">
                   <div><img src="images/TW_flag.svg" alt="台灣">
@@ -468,7 +468,7 @@
                 <div class="qa-list-content accordion-answer" :class="{'is-open':openFaq.includes(i)}">
                   <div>
                     <p>{{item.a}}<a v-if="item.link" :href="item.link" target="_blank"
-                        rel="nofollow me noopener noreferrer">{{item.linkText}}</a></p>
+                        rel="nofollow me noopener noreferrer">{{item.linkText}}</a>{{item.afterLink || ''}}</p>
                   </div>
                 </div>
               </div>
@@ -508,7 +508,7 @@
                   <li>若取消訂單或辦理退貨，僅退還購物實際支付的金額，已折抵金額將無法歸還。</li>
                 </ul>
 
-                <h4 class="notice-paren-heading" data-number="(6)">台股電子交易手續費抵用金月月1,000元</h4>
+                <h4 class="notice-paren-heading" data-number="(6)">台股電子交易手續費抵用金1,000元</h4>
                 <ul class="notice-bullet-list">
                   <li>手續費抵用金將於您「完成首筆交易」扣款成功且「完成本活動登錄」的次月起至2027年8月底，月月回饋到您的「交割帳戶」或「e財庫」。</li>
                   <li>「完成首筆交易」不限單筆或定期定額、不限台／美股、不限金額、標的，但信託平台交易不適用。</li>
@@ -708,7 +708,7 @@
       </div>
     </div>
   </div>
-  <script src="js/main.js?v=20260916"></script>
+  <script src="js/main.js?v=20260918"></script>
 </body>
 
 </html>
