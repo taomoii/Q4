@@ -2055,6 +2055,12 @@ html {
   font-size:28px
 }
 
+.amount-comma {
+  display:inline-block;
+  font-size:.62em;
+  line-height:1;
+}
+
 .hero-offers p {
   align-self:center;
   color:#242424;
@@ -2345,7 +2351,7 @@ html {
 }
 .hero-copy>a {
   min-width:235px;
-  margin-top:70px;
+  margin-top:65px;
   padding:9px 26px;
   font-size:28px
 }
@@ -2494,7 +2500,7 @@ html {
 
   .hero-copy>a {
     min-width:220px;
-    margin-top:75px;
+    margin-top:70px;
     font-size:26px
   }
 
@@ -2940,13 +2946,17 @@ html {
   padding:0;
 }
 
-.register-fields>label:first-child {
+.register-fields>label:not(.agree) {
   display:block;
   margin-bottom:10px;
   color:#12304b;
   font-size:18px;
   font-weight:500;
   text-align:left;
+}
+
+.register-fields>input+label:not(.agree) {
+  margin-top:16px;
 }
 
 .register-fields>input {
@@ -2979,6 +2989,11 @@ html {
   background: linear-gradient(135deg, #FFAB6A, #f04a38);
   font-size: 20px;
   font-weight: 600;
+}
+
+.register-fields .primary-button:disabled {
+  opacity:.55;
+  cursor:not-allowed;
 }
 
 .register-fields .form-message {
@@ -5253,8 +5268,12 @@ h2 {
     font-size: 16px;
   }
   
-  .register-fields>label:first-child {
+  .register-fields>label:not(.agree) {
     display: none;
+  }
+
+  .register-fields #redeemCode {
+    margin-top:12px;
   }
 
   .trade-heading {
